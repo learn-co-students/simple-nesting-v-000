@@ -39,6 +39,3 @@ describe "nested hash" do
     end
   end
 end
-
-
-
