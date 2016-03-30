@@ -5,7 +5,10 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+  # config.treat_symbols_as_metadata_keys_with_true_values = true
+  # The previous line of code got a Deprecation Warning from the Ruby
+  # compiler, so I commented it out. This attribute is true by default
+  # regardless, so it does not affect test performance.
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
 
