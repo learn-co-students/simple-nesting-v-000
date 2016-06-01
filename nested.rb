@@ -15,8 +15,7 @@ def hopper
           :languages => ["C"]
         }
      }
-programmer_hash[:grace_hopper]
-
+		 programmer_hash[:grace_hopper] # operates on the programmer_hash and returns the value of the :grace_hopper key
 end
 
 def alan_kay_is_known_for
@@ -36,11 +35,10 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
-		 programmer_hash[:alan_kay][:known_for]
+		 programmer_hash[:alan_kay][:known_for] #operates on the programmer_hash and returns the value of what Alan Kay is known for
 end
 
 def dennis_ritchies_language
-	string = ' '
 	programmer_hash =
  		{
         :grace_hopper => {
@@ -56,17 +54,16 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-		  programmer_hash[:dennis_ritchie][:languages].join
+		  programmer_hash[:dennis_ritchie][:languages].join #operates on the programmer_hash and returns the value of Dennis Ritchie's language as a string
 end
 
-#
-# yukihiro_matsumoto => {
+
+def adding_matz
+# add the following information to the top level of the programmer hash
+# :yukihiro_matsumoto => {
 # 	:known_for => "Ruby",
 # 	 :languages => ["LISP, C"]
 # }
-def adding_matz
-# add the following information to the top level of the programmer hash
-
 	programmer_hash =
  		{
         :grace_hopper => {
@@ -111,12 +108,8 @@ def changing_alan
           :languages => ["C"]
         }
      }
-     #change what Alan Kay is :known_for the value of the alans_new_info variable.
-		#  alan_kay = {}
-		#  known_for = {} #create an empty hash for the known_for key
-		#  programmer_hash = alan_kay #add yukihiro_matsumoto hash as a key of the programmer_hash
-		#  programmer_hash[:alan_kay] = known_for #add this as a key
-		 programmer_hash[:alan_kay][:known_for] = "GUI"
+		 programmer_hash[:alan_kay][:known_for] = "GUI" #operates on the programmer_hash and changes
+		  #what Alan Kay is known for, returning the newly-changed hash
 		 programmer_hash
 end
 
@@ -136,6 +129,7 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
-		 programmer_hash[:dennis_ritchie][:languages] << 'Assembly'
+		 programmer_hash[:dennis_ritchie][:languages] << 'Assembly' #operates on the programmer_hash and adds 'Assembly' to
+		 #Dennis Ritchie's languages, returning the newly-added-to-hash
 		 programmer_hash
 end
