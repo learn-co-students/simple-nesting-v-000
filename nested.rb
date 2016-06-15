@@ -16,7 +16,8 @@ def hopper
         }
      }
 
-
+  value = programmer_hash[:grasshopper]
+  value
 end
 
 def alan_kay_is_known_for
