@@ -127,6 +127,11 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
-programmer_hash[:dennis_ritchie][:languages] = "Assembly"
-programmer_hash[:dennis_ritchie][:languages(0)]
+programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+programmer_hash[:dennis_ritchie][:languages]
+#programmer_hash[:dennis_ritchie]
+#programmer_hash
+#programmer_hash[:dennis_ritchie][:languages[1])]
+#programmer_hash[:dennis_ritchie][:languages][1])
+#adding_to_dennis
 end
