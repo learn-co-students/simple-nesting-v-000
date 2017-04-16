@@ -60,7 +60,7 @@ def dennis_ritchies_language
         }
      }
 
-  programmer_hash[:dennis_ritchie][:languages][0]
+  programmer_hash[:dennis_ritchie][:languages][0] #remember: can use .first here instead of [0]
 
 end
 
@@ -111,7 +111,7 @@ def changing_alan
      #change what Alan Kay is :known_for to the value of the alans_new_info variable.
      alans_new_info = "GUI"
 
-		 programmer_hash[:alan_kay][:known_for] = "GUI"
+		 programmer_hash[:alan_kay][:known_for] = "GUI" #should have used alans_new_info
 		 programmer_hash
 
 end
