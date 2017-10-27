@@ -119,8 +119,6 @@ def changing_alan
 		 }
 
 		 programmer_hash
-
-
 end
 
 def adding_to_dennis
