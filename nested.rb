@@ -127,5 +127,6 @@ def adding_to_dennis
         }
      }
 		 programmer_hash[:dennis_ritchie][:languages] << 'Assembly'
+		#  Originally, I used: ...[:languages][1] = "Assembly", but that is only feasible knowing the array length.
 		 programmer_hash
 end
