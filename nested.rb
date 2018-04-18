@@ -131,5 +131,6 @@ def adding_to_dennis
         }
      }
 
-programmer_hash[:dennis_ritchie][:languages].push "Assembly" # << or [1] works too but push is pretty
+programmer_hash[:dennis_ritchie][:languages].push("Assembly") # << or [1] works too but push is pretty
+programmer_hash
 end
