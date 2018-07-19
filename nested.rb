@@ -140,6 +140,10 @@ def adding_to_dennis
 
 programmer_hash[:dennis_ritchie][:languages].push "Assembly"
 
+# Or, you could add the string like this, too:
+# programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+
+
 return programmer_hash
 
 end
