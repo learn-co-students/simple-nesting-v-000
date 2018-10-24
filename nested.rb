@@ -1,5 +1,5 @@
-
 def hopper
+
 	programmer_hash =
  		{
         :grace_hopper => {
@@ -15,10 +15,14 @@ def hopper
           :languages => ["C"]
         }
      }
-programmer_hash[:grace_hopper]
+
+		 programmer_hash[:grace_hopper]
+
 end
 
+
 def alan_kay_is_known_for
+
 	programmer_hash =
  		{
         :grace_hopper => {
@@ -34,11 +38,13 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
-programmer_hash[:alan_kay][:known_for]
+
+		 programmer_hash[:alan_kay][:known_for]
 
 end
 
 def dennis_ritchies_language
+
 	programmer_hash =
  		{
         :grace_hopper => {
@@ -54,10 +60,18 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-programmer_hash[:dennis_ritchie][:languages].join
+
+		 programmer_hash[:dennis_ritchie][:languages].join
+
 end
 
 def adding_matz
+# add the following information to the top level of programmer_hash
+# :yukihiro_matsumoto => {
+#   :known_for => "Ruby",
+#    :languages => ["LISP", "C"]
+# }
+
 	programmer_hash =
  		{
         :grace_hopper => {
@@ -74,8 +88,8 @@ def adding_matz
         }
      }
 
-another_hash = {:yukihiro_matsumoto => {:known_for => "Ruby", :languages => ["LISP", "C"]}}
-programmer_hash.merge(another_hash)
+		 programmer_hash[:yukihiro_matsumoto]={:known_for => "Ruby",:languages => ["Lisp", "C"]}
+		 programmer_hash
 end
 
 def changing_alan
@@ -94,9 +108,9 @@ def changing_alan
           :languages => ["C"]
         }
      }
-		 alans_new_info = "GUI"
-		 programmer_hash[:alan_kay][:known_for] = alans_new_info
-		 programmer_hash
+
+		programmer_hash[:alan_kay][:known_for] = "GUI"
+		programmer_hash
 end
 
 def adding_to_dennis
@@ -115,6 +129,7 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
-programmer_hash[:dennis_ritchie][:languages] << "Assembly"
-programmer_hash
+
+		 programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+		 programmer_hash
 end
