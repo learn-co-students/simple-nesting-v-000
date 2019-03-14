@@ -38,7 +38,8 @@ def alan_kay_is_known_for
         }
      }
 end
-
+programmer_hash[:alan_kay]
+end
 def dennis_ritchies_language
 	programmer_hash = 
  		{
@@ -65,7 +66,11 @@ def adding_matz
 # }
 
 	programmer_hash = 
- 		{
+ 		{   :yukihiro_matsumoto => {
+ 		      :known_for => "Ruby",
+ 		        :languages => ["LISP", "C"]
+ 		}, 		
+ 		
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -99,6 +104,8 @@ def changing_alan
           :languages => ["C"]
         }
      }
+   end
+    programmer_hash[:alan_kay][:known_for]=> "GUI"
      #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
      alans_new_info = "GUI"
      
