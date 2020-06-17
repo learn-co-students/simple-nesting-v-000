@@ -1,5 +1,6 @@
 require_relative "spec_helper"
 require_relative "../nested.rb"
+require "pry"
 
 describe "nested hash" do 
   describe "#hopper" do 
